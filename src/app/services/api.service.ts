@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, concat, forkJoin, interval, merge, zip } from 'rxjs';
+import { Observable, concat, forkJoin, interval, map, merge, zip } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -45,5 +45,12 @@ export class ApiService {
     const result$ = concat(it$, apiLocal$, apiExterna$);
 
     return result$;
+  }
+
+  getUsersHttp() {
+    const http$ = this.http.get('http://jsonplaceholder.typicode.com/todos/1')
+      .pipe(map((data: any) => data.title));
+
+      return http$;
   }
 }
