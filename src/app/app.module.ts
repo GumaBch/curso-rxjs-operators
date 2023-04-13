@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { ObservablesComponent } from './components/observables/observables.component';
 import { SubjectComponent } from './components/subject/subject.component';
@@ -28,7 +30,8 @@ import { ForkjoinComponent } from './components/operadores-criacao-juncao/forkjo
     ForkjoinComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
