@@ -15,6 +15,7 @@ import { ThrowErrorComponent } from './components/operadores-criacao/throw-error
 import { AjaxComponent } from './components/operadores-criacao/ajax/ajax.component';
 import { ForkjoinComponent } from './components/operadores-criacao-juncao/forkjoin/forkjoin.component';
 import { ZipComponent } from './components/operadores-criacao-juncao/zip/zip.component';
+import { MergeConcatComponent } from './components/operadores-criacao-juncao/merge-concat/merge-concat.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ZipComponent } from './components/operadores-criacao-juncao/zip/zip.com
     ThrowErrorComponent,
     AjaxComponent,
     ForkjoinComponent,
-    ZipComponent
+    ZipComponent,
+    MergeConcatComponent
   ],
   imports: [
     BrowserModule,
