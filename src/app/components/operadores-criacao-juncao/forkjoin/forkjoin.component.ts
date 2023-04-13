@@ -33,7 +33,7 @@ export class ForkjoinComponent implements OnInit {
   }
 
   getUsers() {
-    this.apiService.getUsers().subscribe(res => console.log(res));
+    this.apiService.getUsersForkJoin().subscribe(res => console.log(res));
   }
 
 }

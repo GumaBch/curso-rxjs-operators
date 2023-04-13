@@ -14,6 +14,7 @@ import { TimerComponent } from './components/operadores-criacao/timer/timer.comp
 import { ThrowErrorComponent } from './components/operadores-criacao/throw-error/throw-error.component';
 import { AjaxComponent } from './components/operadores-criacao/ajax/ajax.component';
 import { ForkjoinComponent } from './components/operadores-criacao-juncao/forkjoin/forkjoin.component';
+import { ZipComponent } from './components/operadores-criacao-juncao/zip/zip.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ForkjoinComponent } from './components/operadores-criacao-juncao/forkjo
     TimerComponent,
     ThrowErrorComponent,
     AjaxComponent,
-    ForkjoinComponent
+    ForkjoinComponent,
+    ZipComponent
   ],
   imports: [
     BrowserModule,
