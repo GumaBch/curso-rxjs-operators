@@ -6,6 +6,7 @@ import { ObservablesComponent } from './components/observables/observables.compo
 import { SubjectComponent } from './components/subject/subject.component';
 import { FromComponent } from './components/operadores-criacao/from/from.component';
 import { OfComponent } from './components/operadores-criacao/of/of.component';
+import { FromEventComponent } from './components/operadores-criacao/from-event/from-event.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { OfComponent } from './components/operadores-criacao/of/of.component';
     ObservablesComponent,
     SubjectComponent,
     FromComponent,
-    OfComponent
+    OfComponent,
+    FromEventComponent
   ],
   imports: [
     BrowserModule
