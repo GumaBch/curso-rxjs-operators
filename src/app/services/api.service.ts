@@ -51,6 +51,14 @@ export class ApiService {
     const http$ = this.http.get('http://jsonplaceholder.typicode.com/todos/1')
       .pipe(map((data: any) => data.title));
 
-      return http$;
+    return http$;
+  }
+
+  getUsersHttpSwitchMap() {
+    return this.http.get('http://localhost:3000/user');
+  }
+
+  getUsersHttpSwitchMapSearch(cpf: string) {
+    return this.http.get(`http://localhost:3000/users?cpf=${cpf}`);
   }
 }
