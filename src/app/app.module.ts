@@ -20,6 +20,7 @@ import { MapComponent } from './components/operadores-transformacao/map/map.comp
 import { MapToComponent } from './components/operadores-transformacao/map-to/map-to.component';
 import { SwitchMapComponent } from './components/operadores-transformacao/switch-map/switch-map.component';
 import { PluckComponent } from './components/operadores-transformacao/pluck/pluck.component';
+import { ToArrayComponent } from './components/operadores-transformacao/to-array/to-array.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PluckComponent } from './components/operadores-transformacao/pluck/pluc
     MapComponent,
     MapToComponent,
     SwitchMapComponent,
-    PluckComponent
+    PluckComponent,
+    ToArrayComponent
   ],
   imports: [
     BrowserModule,
