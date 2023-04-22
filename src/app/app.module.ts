@@ -24,6 +24,7 @@ import { ToArrayComponent } from './components/operadores-transformacao/to-array
 import { FilterComponent } from './components/operadores-filtragem/filter/filter.component';
 import { TakeComponent } from './components/operadores-filtragem/take/take.component';
 import { TakeUntilComponent } from './components/operadores-filtragem/take-until/take-until.component';
+import { TakeWhileComponent } from './components/operadores-filtragem/take-while/take-while.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TakeUntilComponent } from './components/operadores-filtragem/take-until
     ToArrayComponent,
     FilterComponent,
     TakeComponent,
-    TakeUntilComponent
+    TakeUntilComponent,
+    TakeWhileComponent
   ],
   imports: [
     BrowserModule,
