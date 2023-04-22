@@ -25,6 +25,7 @@ import { FilterComponent } from './components/operadores-filtragem/filter/filter
 import { TakeComponent } from './components/operadores-filtragem/take/take.component';
 import { TakeUntilComponent } from './components/operadores-filtragem/take-until/take-until.component';
 import { TakeWhileComponent } from './components/operadores-filtragem/take-while/take-while.component';
+import { SkipComponent } from './components/operadores-filtragem/skip/skip.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { TakeWhileComponent } from './components/operadores-filtragem/take-while
     FilterComponent,
     TakeComponent,
     TakeUntilComponent,
-    TakeWhileComponent
+    TakeWhileComponent,
+    SkipComponent
   ],
   imports: [
     BrowserModule,
