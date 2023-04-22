@@ -23,6 +23,7 @@ import { PluckComponent } from './components/operadores-transformacao/pluck/pluc
 import { ToArrayComponent } from './components/operadores-transformacao/to-array/to-array.component';
 import { FilterComponent } from './components/operadores-filtragem/filter/filter.component';
 import { TakeComponent } from './components/operadores-filtragem/take/take.component';
+import { TakeUntilComponent } from './components/operadores-filtragem/take-until/take-until.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { TakeComponent } from './components/operadores-filtragem/take/take.compo
     PluckComponent,
     ToArrayComponent,
     FilterComponent,
-    TakeComponent
+    TakeComponent,
+    TakeUntilComponent
   ],
   imports: [
     BrowserModule,
