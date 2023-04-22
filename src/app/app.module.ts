@@ -21,6 +21,7 @@ import { MapToComponent } from './components/operadores-transformacao/map-to/map
 import { SwitchMapComponent } from './components/operadores-transformacao/switch-map/switch-map.component';
 import { PluckComponent } from './components/operadores-transformacao/pluck/pluck.component';
 import { ToArrayComponent } from './components/operadores-transformacao/to-array/to-array.component';
+import { FilterComponent } from './components/operadores-filtragem/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ToArrayComponent } from './components/operadores-transformacao/to-array
     MapToComponent,
     SwitchMapComponent,
     PluckComponent,
-    ToArrayComponent
+    ToArrayComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
