@@ -29,6 +29,7 @@ import { SkipComponent } from './components/operadores-filtragem/skip/skip.compo
 import { DebounceTimeComponent } from './components/operadores-filtragem/debounce-time/debounce-time.component';
 import { SwitchAllComponent } from './components/operadores-juncao/switch-all/switch-all.component';
 import { StartWithComponent } from './components/operadores-juncao/start-with/start-with.component';
+import { CombineLatestComponent } from './components/operadores-juncao/combine-latest/combine-latest.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { StartWithComponent } from './components/operadores-juncao/start-with/st
     SkipComponent,
     DebounceTimeComponent,
     SwitchAllComponent,
-    StartWithComponent
+    StartWithComponent,
+    CombineLatestComponent
   ],
   imports: [
     BrowserModule,
