@@ -39,6 +39,7 @@ import { TapComponent } from './components/operadores-utilitarios/tap/tap.compon
 import { DelayComponent } from './components/operadores-utilitarios/delay/delay.component';
 import { TimeoutComponent } from './components/operadores-utilitarios/timeout/timeout.component';
 import { EveryComponent } from './components/operadores-condicionais-booleanos/every/every.component';
+import { FindComponent } from './components/operadores-condicionais-booleanos/find/find.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { EveryComponent } from './components/operadores-condicionais-booleanos/e
     TapComponent,
     DelayComponent,
     TimeoutComponent,
-    EveryComponent
+    EveryComponent,
+    FindComponent
   ],
   imports: [
     BrowserModule,
