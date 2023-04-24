@@ -38,6 +38,7 @@ import { RetryWhenComponent } from './components/operadores-tratamento-errors/re
 import { TapComponent } from './components/operadores-utilitarios/tap/tap.component';
 import { DelayComponent } from './components/operadores-utilitarios/delay/delay.component';
 import { TimeoutComponent } from './components/operadores-utilitarios/timeout/timeout.component';
+import { EveryComponent } from './components/operadores-condicionais-booleanos/every/every.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { TimeoutComponent } from './components/operadores-utilitarios/timeout/ti
     RetryWhenComponent,
     TapComponent,
     DelayComponent,
-    TimeoutComponent
+    TimeoutComponent,
+    EveryComponent
   ],
   imports: [
     BrowserModule,
