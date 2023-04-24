@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, concat, forkJoin, interval, map, merge, of, retry, share, shareReplay, throwError, toArray, zip } from 'rxjs';
+import { Observable, catchError, concat, delay, forkJoin, interval, map, merge, of, retry, share, shareReplay, throwError, toArray, zip } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -103,5 +103,12 @@ export class ApiService {
       }),
       retry(2)
     );
+  }
+
+  getUsersDelay() {
+    return this.http.get(`http://localhost:3000/users`)
+      .pipe(
+        delay(5000)
+      );
   }
 }
