@@ -37,6 +37,7 @@ import { CatchErrorComponent } from './components/operadores-tratamento-errors/c
 import { RetryWhenComponent } from './components/operadores-tratamento-errors/retry-when/retry-when.component';
 import { TapComponent } from './components/operadores-utilitarios/tap/tap.component';
 import { DelayComponent } from './components/operadores-utilitarios/delay/delay.component';
+import { TimeoutComponent } from './components/operadores-utilitarios/timeout/timeout.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { DelayComponent } from './components/operadores-utilitarios/delay/delay.
     CatchErrorComponent,
     RetryWhenComponent,
     TapComponent,
-    DelayComponent
+    DelayComponent,
+    TimeoutComponent
   ],
   imports: [
     BrowserModule,
