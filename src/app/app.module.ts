@@ -35,6 +35,7 @@ import { ShareReplayComponent } from './components/operadores-multicasting/share
 import { ShareComponent } from './components/operadores-multicasting/share/share.component';
 import { CatchErrorComponent } from './components/operadores-tratamento-errors/catch-error/catch-error.component';
 import { RetryWhenComponent } from './components/operadores-tratamento-errors/retry-when/retry-when.component';
+import { TapComponent } from './components/operadores-utilitarios/tap/tap.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { RetryWhenComponent } from './components/operadores-tratamento-errors/re
     ShareReplayComponent,
     ShareComponent,
     CatchErrorComponent,
-    RetryWhenComponent
+    RetryWhenComponent,
+    TapComponent
   ],
   imports: [
     BrowserModule,
