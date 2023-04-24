@@ -32,6 +32,7 @@ import { StartWithComponent } from './components/operadores-juncao/start-with/st
 import { CombineLatestComponent } from './components/operadores-juncao/combine-latest/combine-latest.component';
 import { WithLatestFromComponent } from './components/operadores-juncao/with-latest-from/with-latest-from.component';
 import { ShareReplayComponent } from './components/operadores-multicasting/share-replay/share-replay.component';
+import { ShareComponent } from './components/operadores-multicasting/share/share.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { ShareReplayComponent } from './components/operadores-multicasting/share
     StartWithComponent,
     CombineLatestComponent,
     WithLatestFromComponent,
-    ShareReplayComponent
+    ShareReplayComponent,
+    ShareComponent
   ],
   imports: [
     BrowserModule,

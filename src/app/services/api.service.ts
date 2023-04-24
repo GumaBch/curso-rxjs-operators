@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, concat, forkJoin, interval, map, merge, shareReplay, toArray, zip } from 'rxjs';
+import { Observable, concat, forkJoin, interval, map, merge, share, shareReplay, toArray, zip } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -77,6 +77,13 @@ export class ApiService {
     return this.http.get(`http://localhost:3000/users`)
       .pipe(
         shareReplay(1)
+      );
+  }
+
+  getUsersShare() {
+    return this.http.get(`http://localhost:3000/users`)
+      .pipe(
+        share()
       );
   }
 }
